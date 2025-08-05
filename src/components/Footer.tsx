@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -8,8 +9,8 @@ export default function Footer() {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="mb-4">
-              <Link href="/" className="text-2xl font-bold text-white">
-                Oljebra Group
+              <Link href="/" className="flex items-center bg-white px-3 py-2 rounded-lg w-fit">
+                <Image src="/logo.png" alt="Oljebra Group" width={140} height={45} className="h-10 w-auto" />
               </Link>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
